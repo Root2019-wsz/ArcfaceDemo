@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.SingleImageActivity">
+   <LinearLayout
+       android:layout_margin="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center">
+
+       <ImageView
+           android:id="@+id/iv_show"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="150dp"
+           android:adjustViewBounds="true"
+           android:maxHeight="200dp"
+           android:minWidth="100dp"
+           android:minHeight="100dp" />
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="@string/choose_local_image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_shap"
+            android:onClick="chooseLocalImage"
+            android:textColor="@color/white"
+            android:id="@+id/bt_choose_local_image"/>
+
+        <Button
+            android:id="@+id/bt_compare"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="process"
+            android:background="@drawable/button_shap"
+            android:textColor="@color/white"
+            android:text="@string/start_process" />
+
+       </LinearLayout>
+
+
+       <Button
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/button_shap"
+           android:textColor="@color/white"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginBottom="20dp"
+           android:onClick="jumpToBatchRegisterActivity"
+           android:text="@string/page_face_manage" />
+
+
+       <TextView
+           android:id="@+id/tv_notice"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+</ScrollView>

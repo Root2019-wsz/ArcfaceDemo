@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FaceManageActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/faces"
+            android:layout_marginTop="100dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:minWidth="100dp"
+            android:minHeight="100dp" />
+        <TextView
+            android:layout_margin="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/batch_process_notification_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:onClick="batchRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shap"
+            android:textColor="@color/white"
+            android:text="@string/batch_process_batch_register"/>
+        <Button
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clearFaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shap"
+            android:textColor="@color/white"
+            android:text="@string/batch_process_clear_faces"/>
+        <TextView
+            android:layout_margin="50dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/notification_register_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
